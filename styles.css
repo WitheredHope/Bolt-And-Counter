@@ -3,7 +3,7 @@ body{
     margin: 0;
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 50px auto auto;
+    grid-template-rows: 50px auto auto auto;
 }
 nav {
     font-family: 'Courier New', Courier, monospace;
@@ -12,7 +12,6 @@ nav {
     grid-row: 1;
     margin: 0;
     padding: 0;
-    padding-top: 10px;
 }
 ul.navbar{
     width: 100%;
@@ -20,10 +19,12 @@ ul.navbar{
     grid-template-columns: auto auto auto ;
     grid-column-gap: 5px;
     margin: 0;
-    padding: 0;
+    padding-left: 0;
+    padding-top: 10px;
     list-style-type: none;
 }
 ul.navbar li a {
+    height: 100%;
     padding: 10px;
     color: #356996;
     display: block;
@@ -46,9 +47,27 @@ li.two{
 li.three{
     grid-area: 3,1;
 }
-p{
+div.content{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row: 2;
-    color: #f1f1f1
+    color: #f1f1f1;
+    padding: 10px;
+}
+span{
+    color: #c93c3c;
+    padding-bottom: 0%;
+    margin: 0%;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+a{
+    color:#ab2c2c
+}
+a:visited{
+    color: #5693d1;
+        
 }
