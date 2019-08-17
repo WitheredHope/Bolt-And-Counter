@@ -1,11 +1,21 @@
+
 ul.navbar {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row: 1;
-    grid-template-columns: 50% 50% ; 
+    grid-template-columns: auto auto auto ; 
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    background-color: black;
+}
+li.one {
+    background-color: black;
+    grid-column: 1 / 1;
+}
+ul.navbar li.two {
+    grid-column: 2 / 1;
+}
+ul.navbar li.three {
+    grid-column: 3 / 1;
 }
 ul.navbar li a {
     float: left;
@@ -27,6 +37,3 @@ p{
     grid-row: 2;
     color: #f1f1f1
 }
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
